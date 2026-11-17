@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>کاروان ابوسفیان و جنگ بدر؛ بررسی تاریخی یک پرسش</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Vazirmatn:wght@300;400;600;800&display=swap">
+<style>
+:root{--bg:#0d1830;--bg2:#14254a;--gold:#d8b25c;--gold2:#f2d98f;--ink:#f3ead6;--mut:#aeb4c4;--card:rgba(255,255,255,.06);--line:rgba(216,178,92,.35);--red:#d86a5a;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+#wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{width:1280px;height:720px;position:relative;flex:none;overflow:hidden;background:radial-gradient(ellipse at 20% 0,var(--bg2),var(--bg) 70%)}
+#stage::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23d8b25c' stroke-opacity='.11'%3E%3Crect x='20' y='20' width='40' height='40'/%3E%3Crect x='20' y='20' width='40' height='40' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3C/g%3E%3C/svg%3E")}
+.s{position:absolute;inset:0;padding:50px 76px 74px;display:none;flex-direction:column;overflow:hidden}
+.s.on{display:flex;animation:sin .7s cubic-bezier(.2,.8,.2,1)}
+.s::after{content:"";position:absolute;width:560px;height:560px;inset-inline-end:-190px;bottom:-200px;opacity:.5;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23d8b25c' stroke-width='1.2'%3E%3Crect x='40' y='40' width='120' height='120'/%3E%3Crect x='40' y='40' width='120' height='120' transform='rotate(45 100 100)'/%3E%3Ccircle cx='100' cy='100' r='62'/%3E%3Ccircle cx='100' cy='100' r='36'/%3E%3Crect x='72' y='72' width='56' height='56' transform='rotate(22.5 100 100)'/%3E%3C/g%3E%3C/svg%3E") center/contain;animation:spin 80s linear infinite}
+@keyframes sin{from{opacity:0;transform:scale(1.03)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes up{from{opacity:0;transform:translateY(26px)}}
+@keyframes fade{from{opacity:0}}
+@keyframes grow{from{transform:scaleX(0)}}
+@keyframes draw{from{stroke-dashoffset:1}}
+@keyframes glow{50%{box-shadow:0 0 34px rgba(216,178,92,.45)}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}}
+.a{animation:up .75s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*.16s + .25s);position:relative;z-index:1}
+h1,h2{font-family:"Amiri","Vazirmatn",serif;color:var(--gold2);font-weight:700;line-height:1.35;position:relative;z-index:1}
+h2{font-size:44px;padding-bottom:14px;margin-bottom:22px}
+h2::after{content:"";position:absolute;inset-inline-start:0;bottom:0;height:3px;width:170px;background:linear-gradient(90deg,var(--gold),transparent);transform-origin:right;animation:grow 1s .4s both}
+h1{font-size:60px}
+ul{list-style:none;padding:0;font-size:25px;line-height:1.75}
+li{position:relative;padding-inline-start:34px;margin-bottom:10px}
+li::before{content:"";position:absolute;inset-inline-start:2px;top:.68em;width:11px;height:11px;border:2px solid var(--gold);transform:rotate(45deg)}
+.row{display:flex;gap:44px;flex:1;min-height:0}
+.col{flex:1;min-width:0}
+.fn{position:absolute;inset-inline:76px;bottom:24px;font-size:15px;color:var(--mut);border-top:1px solid var(--line);padding-top:9px;z-index:1;animation:fade 1s 1.2s both}
+.ltr{direction:ltr;unicode-bidi:embed;display:inline-block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 22px;font-size:22px;line-height:1.7;backdrop-filter:blur(3px)}
+.hero{margin:auto 0;text-align:center}
+.arch{display:inline-block;padding:46px 56px 34px;border:2px solid var(--gold);border-radius:300px 300px 20px 20px;background:rgba(216,178,92,.05);animation:glow 4s ease-in-out infinite}
+.q{display:flex;gap:18px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+.q .card{font-size:22px;padding:14px 22px}
+.tl{list-style:none;padding:0;font-size:19px;line-height:1.65;position:relative}
+.tl::before{content:"";position:absolute;inset-inline-start:19px;top:20px;bottom:20px;width:2px;background:var(--line)}
+.tl li{padding:0 0 0 0;padding-inline-start:60px;margin-bottom:11px;min-height:40px}
+.tl li::before{display:none}
+.tl b{position:absolute;inset-inline-start:0;top:0;width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:var(--bg);border:2px solid var(--gold);color:var(--gold2);font-size:18px;animation:pop .6s both;animation-delay:inherit}
+.tl .k{color:var(--gold2);font-weight:600}
+.tl .k b{background:var(--gold);color:var(--bg)}
+.lg{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;color:var(--mut);margin-top:6px}
+.lg i{display:inline-block;width:26px;height:0;border-top:3px solid;vertical-align:middle;margin-inline-end:6px}
+.bars{margin:6px 0 22px}
+.br{display:flex;align-items:center;gap:16px;margin-bottom:14px;font-size:21px}
+.br span{width:110px;flex:none}
+.br div{height:46px;border-radius:0 23px 23px 0;transform-origin:right;animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both;display:flex;align-items:center;padding-inline-start:18px;font-size:18px;color:var(--bg);font-weight:600}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g2 .card{font-size:20px;line-height:1.65}
+.fin{margin-top:6px;border-inline-start:5px solid var(--gold);font-family:"Amiri","Vazirmatn",serif;font-size:25px;line-height:1.9;animation:up .8s both,glow 5s 2s ease-in-out infinite;animation-delay:1.2s,2s}
+.src{display:flex;gap:36px;font-size:15.5px;line-height:1.7}
+.src ol{padding-inline-start:20px;flex:1.15}
+.src ul{flex:1;font-size:14.5px}
+.src li{padding-inline-start:0;margin-bottom:5px}
+.src li::before{display:none}
+.src a{color:var(--gold2);word-break:break-all;direction:ltr;unicode-bidi:embed;display:inline-block}
+#hud{position:fixed;inset-inline:0;bottom:calc(8px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;gap:8px;z-index:20;font-size:14px}
+#hud button{font:inherit;background:rgba(13,24,48,.85);color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:4px 14px;cursor:pointer}
+#cnt{align-self:center;color:var(--mut);min-width:46px;text-align:center}
+#notes{position:fixed;inset-inline:0;bottom:0;background:#070d1c;color:var(--ink);border-top:2px solid var(--gold);font-size:17px;line-height:1.85;padding:14px 22px calc(54px + env(safe-area-inset-bottom,0px));display:none;z-index:15;max-height:40vh;overflow:auto}
+#notes.on{display:block}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);inset-inline-start:0;height:3px;background:var(--gold);z-index:30;transition:width .4s}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div id="wrap"><div id="stage">
+
+<section class="s" data-n="یادداشت ارائه‌دهنده: «برای پاسخ، اول زمینه را می‌گوییم، بعد مسیر اتفاقات را بازسازی می‌کنیم و در پایان میان قصد اولیه و نتیجه واقعی تفاوت می‌گذاریم.» (۳۰ ثانیه)">
+  <div class="hero"><div class="arch a"><h1>پیامبر، کاروان ابوسفیان و جنگ بدر؛<br>واقعیت تاریخی چه بود؟</h1></div>
+  <div class="q"><div class="card a">آیا هدف حرکت مسلمانان کاروان بود؟</div><div class="card a">آیا کاروان غارت یا توقیف شد؟</div><div class="card a">چگونه ماجرا به جنگ بدر تبدیل شد؟</div></div></div>
+  <div class="fn">منابع: ابن‌هشام، السیرة النبویة، بخش غزوه بدر، بند <span class="ltr">49.1</span>؛ قرآن، انفال ۸:۷.</div>
+</section>
+
+<section class="s" data-n="یادداشت: «پس با نخستین رویارویی بزرگ نظامی مسلمانان مدینه و قریش مکه روبه‌رو هستیم؛ نه یک جنگ طولانی، بلکه نبردی تعیین‌کننده در یک روز.» (۴۰ ثانیه)">
+  <h2 class="a">بدر چه زمانی و کجا بود؟</h2>
+  <ul style="margin-top:20px;max-width:900px"><li class="a">بدر: منطقه/آبادی و چاه‌های مهم در مسیر تجاری میان مکه و شام، در جنوب‌غربی مدینه.</li><li class="a">در رمضان سال دوم هجری؛ تاریخ مشهور سنت اسلامی ۱۷ رمضان، برابر با حدود مارس ۶۲۴ میلادی.</li><li class="a">در تبدیل دقیق روز میلادی و حتی روز قمری در گزارش‌ها اختلاف جزئی وجود دارد.</li></ul>
+  <div class="fn">منابع: <span class="ltr">W. Montgomery Watt, Encyclopaedia of Islam, “Badr”</span>؛ <span class="ltr">Islam Museum, “The Battle of Badr”</span>؛ قرآن، انفال ۸.</div>
+</section>
+
+<section class="s" data-n="یادداشت: «وقتی می‌گوییم کاروان ابوسفیان، منظور کاروانی است که او هدایت می‌کرد؛ مالکیت همه کالاها را نباید به او نسبت داد.» (۴۰ ثانیه)">
+  <h2 class="a">ابوسفیان چه کسی بود؟</h2>
+  <ul style="margin-top:20px;max-width:900px"><li class="a">ابوسفیان بن حرب، از چهره‌های بانفوذ قریش و از بازرگانان/سران اموی مکه.</li><li class="a">در این واقعه، سرپرست کاروان بازگشتی از شام بود.</li><li class="a">کاروان شامل اموال و کالاهای تجاری قریش بود؛ نه لزوماً ثروت شخصی یک نفر.</li><li class="a">ابوسفیان بعدها، در جریان فتح مکه در سال ۸ هجری، اسلام آورد.</li></ul>
+  <div class="fn">منابع: ابن‌هشام، غزوه بدر، بند <span class="ltr">49.1</span>؛ <span class="ltr">W. Montgomery Watt, Muhammad at Medina</span>، فصل ۴؛ <span class="ltr">Encyclopaedia of Islam</span>، مدخل <span class="ltr">Abu Sufyan</span>.</div>
+</section>
+
+<section class="s" data-n="یادداشت: «این زمینه، اقدام را توضیح می‌دهد اما به‌تنهایی درباره درستی اخلاقی آن حکم نهایی صادر نمی‌کند. در ارائه، فقط می‌گوییم منابع چه گزارش کرده‌اند.» (۵۵ ثانیه)">
+  <h2 class="a">چرا کاروان هدف قرار گرفت؟</h2>
+  <ul style="font-size:23px;line-height:1.65"><li class="a">پس از هجرت، میان مسلمانان و قریش خصومت و درگیری سیاسی-اقتصادی وجود داشت.</li><li class="a">مسلمانان مهاجر مکه، اموال و خانه‌های خود را در مکه جا گذاشته/از دست داده بودند؛ این موضوع در روایت‌های سیره بخشی از زمینه تنش است.</li><li class="a">مسیر کاروان‌های قریش میان مکه و شام از نظر اقتصادی مهم بود.</li><li class="a">گزارش‌های سیره می‌گویند پیامبر از بازگشت کاروان آگاه شد و برای رهگیری آن حرکت کرد.</li><li class="a">آیه ۸:۷ از «یکی از دو گروه» سخن می‌گوید و توضیح می‌دهد که مسلمانان خواهان گروهِ بی‌سلاح‌تر بودند؛ مفسران آن را معمولاً کاروان در برابر سپاه قریش دانسته‌اند.</li></ul>
+  <div class="fn">منابع: قرآن، انفال ۸:۷؛ تفسیر المیزان، ذیل انفال ۸:۷؛ <span class="ltr">W. Montgomery Watt, Muhammad at Medina</span>، فصل <span class="ltr">“The Battle of Badr”</span>؛ ابن‌هشام، غزوه بدر.</div>
+</section>
+
+<section class="s" style="padding-top:36px" data-n="یادداشت: «پس جنگ به این معنا نبود که مسلمانان کاروان را گرفتند و بعد جنگ آغاز شد. کاروان گریخت؛ سپاه قریش باقی ماند و رویارویی با آن اتفاق افتاد.» (۶۰ ثانیه) — نقشه شماتیک است؛ مقیاس و مرز امروزی ندارد.">
+  <h2 class="a" style="font-size:38px;margin-bottom:10px">ماجرا چگونه به جنگ تبدیل شد؟</h2>
+  <div class="row" style="gap:30px">
+   <div class="col a" style="flex:.95">
+    <svg viewBox="0 0 420 400" width="100%" role="img" aria-label="نقشهٔ شماتیک حجاز">
+     <path d="M0 0H70C95 120 40 230 110 400H0Z" fill="#2c5a8c" opacity=".35"/>
+     <text x="16" y="210" font-size="13" fill="#9fb8d8" transform="rotate(-90 16 210)" text-anchor="middle">دریای سرخ</text>
+     <path d="M270 28C250 120 230 160 205 215S150 330 205 372" stroke="#8d93a6" stroke-width="2" stroke-dasharray="2 6" fill="none"/>
+     <path d="M270 28C120 80 70 190 100 300S150 350 205 372" stroke="var(--gold)" stroke-width="3.5" stroke-dasharray="10 6" fill="none" style="animation:fade 1.2s 1s both"/>
+     <path pathLength="1" d="M300 160L214 226" stroke="#f3ead6" stroke-width="3.5" fill="none" stroke-dasharray="1" style="animation:draw 2s 1.4s both"/>
+     <path pathLength="1" d="M205 372L212 232" stroke="var(--red)" stroke-width="3.5" fill="none" stroke-dasharray="1" style="animation:draw 2s 2.4s both"/>
+     <circle r="6" fill="var(--gold2)"><animateMotion dur="6s" repeatCount="indefinite" path="M270 28C120 80 70 190 100 300S150 350 205 372"/></circle>
+     <circle r="5" fill="#f3ead6"><animateMotion dur="3.5s" begin="1.4s" repeatCount="indefinite" path="M300 160L214 226"/></circle>
+     <circle r="5" fill="var(--red)"><animateMotion dur="3.5s" begin="2.4s" repeatCount="indefinite" path="M205 372L212 232"/></circle>
+     <g fill="#f3ead6"><circle cx="300" cy="160" r="8"/><circle cx="205" cy="372" r="8"/><circle cx="270" cy="28" r="6" fill="#8d93a6"/></g>
+     <circle cx="212" cy="228" r="10" fill="none" stroke="var(--gold2)" stroke-width="3"><animate attributeName="r" values="9;17;9" dur="2.4s" repeatCount="indefinite"/></circle>
+     <g font-size="17" fill="#f3ead6" font-weight="600"><text x="312" y="152">مدینه</text><text x="222" y="392">مکه</text><text x="236" y="212">بدر</text><text x="284" y="26">شام</text></g>
+    </svg>
+    <div class="lg"><span><i style="color:#f3ead6"></i>حرکت مسلمانان</span><span><i style="color:var(--red)"></i>سپاه قریش</span><span><i style="color:var(--gold);border-top-style:dashed"></i>مسیر کاروان (ساحلی)</span><span><i style="color:#8d93a6;border-top-style:dotted"></i>مسیر معمول</span></div>
+    <div class="lg">نقشه شماتیک است: بدون مقیاس و بدون مرزهای امروزی.</div>
+   </div>
+   <ol class="tl col" style="flex:1.05">
+    <li class="a" style="--i:5"><b>۱</b>خبر رسید کاروان بزرگ قریش از شام به مکه بازمی‌گردد.</li>
+    <li class="a" style="--i:7"><b>۲</b>پیامبر و گروهی از مسلمانان برای رهگیری کاروان از مدینه خارج شدند؛ هدف اولیه، نبرد با سپاه بزرگ نبود.</li>
+    <li class="a" style="--i:9"><b>۳</b>ابوسفیان از خطر آگاه شد، مسیر کاروان را تغییر داد و برای درخواست نیروی پشتیبان به مکه پیام فرستاد.</li>
+    <li class="a" style="--i:11"><b>۴</b>قریش نیرویی برای حفاظت از کاروان بسیج کرد؛ فرماندهی سپاه با ابوجهل بود.</li>
+    <li class="a k" style="--i:13"><b>۵</b>کاروان از مسیر ساحلی گریخت و از خطر رهید؛ اما سپاه مکه به حرکت ادامه داد.</li>
+    <li class="a" style="--i:15"><b>۶</b>دو نیرو در بدر روبه‌رو شدند و نبرد رخ داد.</li>
+   </ol>
+  </div>
+  <div class="fn">منابع: ابن‌هشام، غزوه بدر؛ طبری، <span class="ltr">تاریخ الرسل والملوک</span>، حوادث سال دوم هجری، گزارش بدر؛ <span class="ltr">W. Montgomery Watt, Muhammad at Medina</span>، فصل ۴؛ <span class="ltr">Islam Museum, “The build-up to Badr”</span>.</div>
+</section>
+
+<section class="s" data-n="یادداشت: «این اعداد را تقریبی و وابسته به روایت تاریخی معرفی کنید؛ منابع در شمار دقیق افراد یکسان نیستند.» (۴۵ ثانیه)">
+  <h2 class="a">چند نفر بودند و نتیجه چه شد؟</h2>
+  <div class="bars a" style="--i:1">
+   <div class="br"><span>مسلمانان</span><div style="width:32%;background:var(--ink);animation-delay:.6s">حدود ۳۱۳ تا ۳۱۷</div></div>
+   <div class="br"><span>سپاه قریش</span><div style="width:100%;background:var(--gold);animation-delay:1s">حدود ۹۵۰ تا ۱۰۰۰</div></div>
+  </div>
+  <div class="g2"><div class="card a" style="--i:5">مسلمانان: حدود ۳۱۳ تا ۳۱۷ نفر در گزارش‌های سنتی؛ معمولاً عدد ۳۱۳ مشهورتر است.</div><div class="card a" style="--i:6">سپاه قریش: حدود ۹۵۰ تا ۱۰۰۰ نفر.</div><div class="card a" style="--i:7">شمار کشته‌شدگان قریش در گزارش مشهور: حدود ۷۰ نفر؛ اسیران نیز حدود ۷۰ نفر.</div><div class="card a" style="--i:8">کشته‌شدگان مسلمانان: معمولاً ۱۴ نفر گزارش شده، هرچند در برخی منابع اختلاف عدد دیده می‌شود.</div></div>
+  <div class="fn">منابع: ابن‌هشام، غزوه بدر؛ ابن‌سعد، الطبقات الکبرى، بخش زندگی پیامبر و اصحاب بدر؛ <span class="ltr">W. Montgomery Watt, Encyclopaedia of Islam, “Badr”</span>.</div>
+</section>
+
+<section class="s" data-n="یادداشت: «پاسخ دقیق به سؤال عنوان این است: قصد رهگیری کاروان و امید به گرفتن اموال در منابع گزارش شده؛ اما تصرف واقعی آن کاروان اتفاق نیفتاد.» (۴۵ ثانیه)">
+  <h2 class="a">آیا اموال کاروان تصرف شد؟</h2>
+  <ul style="margin-top:20px;max-width:960px"><li class="a">هدف اولیه، رهگیری کاروان و دستیابی به اموال تجاری آن بود.</li><li class="a">ابوسفیان کاروان را از مسیر خطر دور کرد؛ کاروان از دسترس مسلمانان خارج شد.</li><li class="a">بنابراین کاروان و کالاهایش در بدر به تصرف مسلمانان درنیامد.</li><li class="a">آنچه پس از نبرد مطرح شد، غنائم میدان جنگ و مسئله اسیران بود؛ این‌ها را نباید با اموال کاروان یکی گرفت.</li></ul>
+  <div class="fn">منابع: ابن‌هشام، غزوه بدر؛ قرآن، انفال ۸:۷ و ۸:۴۱؛ <span class="ltr">W. Montgomery Watt, Muhammad at Medina</span>.</div>
+</section>
+
+<section class="s" data-n="جمله پایانی پیشنهادی در کادر پایین اسلاید آمده است. جمع‌بندی بر اساس منابع اسلایدهای پیشین. (۴۵ ثانیه)">
+  <h2 class="a">جمع‌بندی و پاسخ به پرسش</h2>
+  <ul style="font-size:23px;line-height:1.65"><li class="a">بله، حرکت اولیه برای رهگیری کاروان قریش بود و انگیزه اقتصادی/غنیمت در منابع دیده می‌شود.</li><li class="a">کاروان متعلق به شبکه‌ای از بازرگانان قریش بود و ابوسفیان رهبر آن بود.</li><li class="a">کاروان نجات یافت؛ جنگ با سپاه قریش در بدر رخ داد.</li><li class="a">درباره چرایی و داوری اخلاقی باید زمینه خصومت، مصادره/ترک اموال مهاجران، امنیت مسیر تجارت و نگاه‌های متفاوت تاریخی را کنار هم دید.</li></ul>
+  <div class="card fin">پس پاسخ نه انکار کاملِ قصد اقتصادی است و نه ادعای تصرف موفق کاروان؛ منابع از تلاش برای رهگیری کاروان خبر می‌دهند، اما نبرد بدر با سپاه قریش رخ داد و خود کاروان از دسترس خارج شد.</div>
+  <div class="fn">منابع: جمع‌بندی بر اساس منابع اسلایدهای پیشین.</div>
+</section>
+
+<section class="s" style="padding-top:36px" data-n="منابع اصلی و پژوهشی. نکته کتاب‌شناختی: چاپ‌ها و تقسیم‌بندی جلدهای طبقات ابن‌سعد متفاوت است؛ ارجاع جلد را با نسخه‌ای که در اختیار دارید تطبیق دهید. دربارهٔ «رحمت نبوی و خشونت جاهلی» اطلاعات کتاب‌شناختی کامل هنوز مشخص نیست؛ تا زمان تطبیق نسخه، نقل‌قول یا شماره صفحه‌ای به آن نسبت داده نشده است.">
+  <h2 class="a" style="font-size:36px;margin-bottom:14px">منابع</h2>
+  <div class="src a">
+   <ol>
+    <li>قرآن کریم، سوره انفال، به‌ویژه آیات ۷، ۴۱ و ۴۲.</li>
+    <li>ابن‌هشام، عبدالملک، السیرة النبویة، «غزوة بدر الكبرى».</li>
+    <li>ابن‌سعد، محمد بن سعد، الطبقات الکبرى.</li>
+    <li>طبری، محمد بن جریر، تاریخ الرسل والملوک، حوادث سال دوم هجری.</li>
+    <li><span class="ltr">W. Montgomery Watt, Muhammad at Medina</span>, chapter 4.</li>
+    <li><span class="ltr">W. Montgomery Watt, “Badr,” Encyclopaedia of Islam, 2nd ed.</span></li>
+    <li>تفسیر المیزان، ذیل آیات ۷ تا ۱۴ سوره انفال.</li>
+    <li><span class="ltr">Islam Museum, “The build-up to Badr”; “The Battle of Badr”</span>.</li>
+    <li><span class="ltr">Safiur Rahman Mubarakpuri, The Sealed Nectar</span>.</li>
+    <li>«رحمت نبوی و خشونت جاهلی»، آقای صابری (اطلاعات کتاب‌شناختی کامل هنوز مشخص نیست).</li>
+   </ol>
+   <ul>
+    <li>ابن‌هشام: <a href="https://hadithunlocked.com/ibnhisham/49/1">hadithunlocked.com/ibnhisham/49/1</a></li>
+    <li>المیزان: <a href="https://almizan.org/chapter-8-al-anfal/verses-7-14">almizan.org/chapter-8-al-anfal/verses-7-14</a></li>
+    <li>ابن‌کثیر: <a href="https://www.alim.org/quran/tafsir/ibn-kathir/surah/8/7/">alim.org/quran/tafsir/ibn-kathir/surah/8/7</a></li>
+    <li>Watt, <span class="ltr">Muhammad at Medina</span> (PDF): <a href="https://almuslih.org/wp-content/uploads/Library/Watt%2C%20W%20M%20-%20Muhammad%20at%20Medina.pdf">almuslih.org</a></li>
+    <li><span class="ltr">New Cambridge History of Islam, Vol. 1</span> (PDF): <a href="https://almuslih.org/wp-content/uploads/Library/Robinson%2C%20C%20%28ed%29%20-%20The%20New%20Cambridge%20History%20of%20Islam%20%E2%80%93%20Vol%201.pdf">almuslih.org</a></li>
+    <li>Islam Museum: <a href="https://islam.museum/en/event/badr-expedition-setup/">islam.museum/en/event/badr-expedition-setup</a></li>
+    <li>Islam Museum: <a href="https://islam.museum/en/event/battle-of-badr/">islam.museum/en/event/battle-of-badr</a></li>
+    <li>MIT Libraries: <a href="https://libguides.mit.edu/c.php?g=883344&amp;p=6346960">libguides.mit.edu</a></li>
+   </ul>
+  </div>
+</section>
+
+</div></div>
+<div id="notes"></div>
+<div id="hud"><button id="pv" aria-label="قبلی">›</button><span id="cnt"></span><button id="nx" aria-label="بعدی">‹</button><button id="nt">یادداشت‌ها</button><button id="fs">⛶</button></div>
+<script>
+(function(){
+var S=[].slice.call(document.querySelectorAll('.s')),i=0,st=document.getElementById('stage'),nb=document.getElementById('notes');
+try{var h=parseInt(location.hash.slice(1),10);if(h>0&&h<=S.length)i=h-1}catch(e){}
+S.forEach(function(s){[].forEach.call(s.querySelectorAll('.a'),function(e,k){if(!e.style.getPropertyValue('--i'))e.style.setProperty('--i',k)})});
+function fit(){var k=Math.min(innerWidth/1280,(innerHeight-44)/720);st.style.transform='scale('+k+')'}
+function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,j){s.classList.toggle('on',j===i)});
+[].forEach.call(S[i].querySelectorAll('svg'),function(v){try{v.setCurrentTime(0)}catch(e){}});
+document.getElementById('cnt').textContent=(i+1)+' / '+S.length;
+document.getElementById('bar').style.width=((i+1)/S.length*100)+'%';
+nb.textContent=S[i].getAttribute('data-n')||'';
+try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('nx').onclick=function(){show(i+1)};
+document.getElementById('pv').onclick=function(){show(i-1)};
+document.getElementById('nt').onclick=function(){nb.classList.toggle('on')};
+document.getElementById('fs').onclick=function(){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(e){}};
+addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown')show(i+1);else if(k==='ArrowRight'||k==='PageUp')show(i-1);
+else if(k==='n'||k==='N')nb.classList.toggle('on');else if(k==='Home')show(0);else if(k==='End')show(S.length-1)});
+var x0=null;addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)show(d<0?i+1:i-1);x0=null});
+addEventListener('resize',fit);fit();show(i);
+})();
+</script>
+</body>
+</html>
